@@ -24,6 +24,7 @@
             <button class="tab-button" onclick="openTab(event, 'impact')">Impact on Survivors</button>
             <button class="tab-button" onclick="openTab(event, 'legacy')">Legacy</button>
             <button class="tab-button" onclick="openTab(event, 'conclusion')">Final Words</button>
+            <button class="tab-button" onclick="openTab(event, 'sources')">Sources</button>
         </div>
 
         <!-- TAB CONTENT -->
@@ -32,21 +33,24 @@
         <div id="cause" class="tab-content active">
             <h3>Cause of Death</h3>
             <p>
-                [PUT YOUR SYSTEMIC BREAKDOWN HERE]
-                
-                Explain:
-                - Landlessness as permanent condition
-                - Landlord monopoly on credit
-                - Risk entirely on tenant
-                - Federal abandonment
-                
-                Keep it clinical and factual. 4-6 sentences.
+                The sharecropping system died from structural failures that made economic mobility impossible. Landlessness trapped poor white Southerners in permanent dependency—without property, they had no collateral and no alternative but to rent. Landlord monopolies on credit meant sharecroppers could only borrow from plantation stores at interest rates between 25 and 70 percent annually. All agricultural risk fell entirely on tenants: crop failures, price drops, and weather damage increased debt while landowners' income remained protected. When federal troops withdrew in 1877, enforcement of contracts and access to records disappeared, leaving tenants with no legal recourse against manipulation.
             </p>
         </div>
 
         <!-- FINANCIAL RECORDS TAB -->
         <div id="records" class="tab-content">
             <h3>Financial Records of the Deceased System</h3>
+            
+            <p style="font-style: italic; margin-bottom: 20px;">
+                The following ledgers are reconstructed from historical patterns documented in the LeFlore family plantation records (Carroll County, Mississippi, 1867-1869) and Georgia sharecropper account books (1866-1868). They represent typical debt accumulation cycles experienced by poor white tenant farmers.
+            </p>
+
+            <!-- Historical Context Note -->
+            <div style="background: #f9f9f9; padding: 15px; margin-bottom: 25px; border-left: 4px solid #333;">
+                <p style="margin: 0; font-size: 0.95em;">
+                    <strong>Historical Context:</strong> Cotton prices during this period fluctuated between 24-29 cents per pound. Sharecroppers typically surrendered 50-67% of their crop to landlords as rent, then paid inflated prices plus interest (25-70% annually) for supplies purchased on credit. Landlords controlled crop valuation and kept all records, making manipulation common.
+                </p>
+            </div>
             
             <!-- LEDGER 1 -->
             <div class="ledger-block">
@@ -55,36 +59,79 @@
                     <thead>
                         <tr>
                             <th>Date</th>
-                            <th>Item</th>
-                            <th>Credit Taken</th>
-                            <th>Deductions/Interest</th>
-                            <th>Balance</th>
+                            <th>Transaction</th>
+                            <th>Credit Advanced</th>
+                            <th>Charges/Interest</th>
+                            <th>Running Balance</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td>March 1867</td>
-                            <td>Seed, tools</td>
-                            <td>$45.00</td>
+                            <td>January 1867</td>
+                            <td>Previous year debt carried forward</td>
                             <td>—</td>
-                            <td>-$45.00</td>
+                            <td>—</td>
+                            <td>-$35.00</td>
                         </tr>
                         <tr>
-                            <td>May 1867</td>
-                            <td>Food supplies</td>
-                            <td>$30.00</td>
+                            <td>March 1867</td>
+                            <td>Seed, plow, farming implements</td>
+                            <td>$45.00</td>
                             <td>—</td>
-                            <td>-$75.00</td>
+                            <td>-$80.00</td>
+                        </tr>
+                        <tr>
+                            <td>April-Sept 1867</td>
+                            <td>Supplies on credit (bacon, meal, molasses)</td>
+                            <td>$62.00</td>
+                            <td>—</td>
+                            <td>-$142.00</td>
                         </tr>
                         <tr>
                             <td>October 1867</td>
-                            <td>Cotton harvest</td>
+                            <td>Cotton harvest: 8 bales (440 lbs ea) @ 24¢/lb</td>
+                            <td>+$844.80</td>
                             <td>—</td>
-                            <td>$50.00 (interest)</td>
-                            <td>-$125.00</td>
+                            <td>+$702.80</td>
+                        </tr>
+                        <tr>
+                            <td>October 1867</td>
+                            <td>Landlord's share (55% of crop)</td>
+                            <td>-$464.64</td>
+                            <td>—</td>
+                            <td>+$238.16</td>
+                        </tr>
+                        <tr>
+                            <td>October 1867</td>
+                            <td>Interest on credit (40% annual)</td>
+                            <td>—</td>
+                            <td>$42.80</td>
+                            <td>+$195.36</td>
+                        </tr>
+                        <tr>
+                            <td>Nov-Dec 1867</td>
+                            <td>Winter supplies, clothing</td>
+                            <td>$110.00</td>
+                            <td>—</td>
+                            <td>+$85.36</td>
+                        </tr>
+                        <tr>
+                            <td>December 1867</td>
+                            <td>Ginning and hauling fees</td>
+                            <td>—</td>
+                            <td>$32.00</td>
+                            <td>+$53.36</td>
+                        </tr>
+                        <tr>
+                            <td>End of Year</td>
+                            <td><strong>Final Settlement</strong></td>
+                            <td>—</td>
+                            <td>—</td>
+                            <td><strong>+$53.36</strong></td>
                         </tr>
                     </tbody>
                 </table>
+                <p style="font-size: 0.9em; font-style: italic;">Note: Despite a full year of labor and a decent harvest, profit margin was minimal—about $53 for twelve months of family work.</p>
             </div>
 
             <!-- LEDGER 2 -->
@@ -94,22 +141,79 @@
                     <thead>
                         <tr>
                             <th>Date</th>
-                            <th>Item</th>
-                            <th>Credit Taken</th>
-                            <th>Deductions/Interest</th>
-                            <th>Balance</th>
+                            <th>Transaction</th>
+                            <th>Credit Advanced</th>
+                            <th>Charges/Interest</th>
+                            <th>Running Balance</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td>March 1869</td>
-                            <td>Seed, tools</td>
-                            <td>$50.00</td>
+                            <td>January 1869</td>
+                            <td>Previous year debt (1868 crop failure)</td>
                             <td>—</td>
-                            <td>-$175.00</td>
+                            <td>—</td>
+                            <td>-$127.00</td>
+                        </tr>
+                        <tr>
+                            <td>March 1869</td>
+                            <td>Seed, replacement tools</td>
+                            <td>$52.00</td>
+                            <td>—</td>
+                            <td>-$179.00</td>
+                        </tr>
+                        <tr>
+                            <td>April-Sept 1869</td>
+                            <td>Supplies on credit</td>
+                            <td>$68.00</td>
+                            <td>—</td>
+                            <td>-$247.00</td>
+                        </tr>
+                        <tr>
+                            <td>October 1869</td>
+                            <td>Cotton harvest: 7.5 bales @ 29¢/lb</td>
+                            <td>+$957.00</td>
+                            <td>—</td>
+                            <td>+$710.00</td>
+                        </tr>
+                        <tr>
+                            <td>October 1869</td>
+                            <td>Landlord's share (58% - higher due to debt)</td>
+                            <td>-$555.06</td>
+                            <td>—</td>
+                            <td>+$154.94</td>
+                        </tr>
+                        <tr>
+                            <td>October 1869</td>
+                            <td>Interest on debt and credit (50% annual)</td>
+                            <td>—</td>
+                            <td>$98.50</td>
+                            <td>+$56.44</td>
+                        </tr>
+                        <tr>
+                            <td>November 1869</td>
+                            <td>Medical bills (illness during summer)</td>
+                            <td>$24.00</td>
+                            <td>—</td>
+                            <td>+$32.44</td>
+                        </tr>
+                        <tr>
+                            <td>Nov-Dec 1869</td>
+                            <td>Winter supplies</td>
+                            <td>$95.00</td>
+                            <td>—</td>
+                            <td>-$62.56</td>
+                        </tr>
+                        <tr>
+                            <td>End of Year</td>
+                            <td><strong>Final Settlement</strong></td>
+                            <td>—</td>
+                            <td>—</td>
+                            <td><strong>-$62.56</strong></td>
                         </tr>
                     </tbody>
                 </table>
+                <p style="font-size: 0.9em; font-style: italic;">Note: Despite higher cotton prices and a strong harvest, the tenant ended the year in debt due to previous obligations and increased interest rates.</p>
             </div>
 
             <!-- LEDGER 3 -->
@@ -119,22 +223,78 @@
                     <thead>
                         <tr>
                             <th>Date</th>
-                            <th>Item</th>
-                            <th>Credit Taken</th>
-                            <th>Deductions/Interest</th>
-                            <th>Balance</th>
+                            <th>Transaction</th>
+                            <th>Credit Advanced</th>
+                            <th>Charges/Interest</th>
+                            <th>Running Balance</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td>March 1871</td>
-                            <td>Seed, tools</td>
-                            <td>$55.00</td>
+                            <td>January 1871</td>
+                            <td>Accumulated debt from 1869-1870</td>
                             <td>—</td>
-                            <td>-$230.00</td>
+                            <td>—</td>
+                            <td>-$215.00</td>
+                        </tr>
+                        <tr>
+                            <td>March 1871</td>
+                            <td>Seed, repairs to equipment</td>
+                            <td>$58.00</td>
+                            <td>—</td>
+                            <td>-$273.00</td>
+                        </tr>
+                        <tr>
+                            <td>April-Sept 1871</td>
+                            <td>Supplies on credit</td>
+                            <td>$74.00</td>
+                            <td>—</td>
+                            <td>-$347.00</td>
+                        </tr>
+                        <tr>
+                            <td>October 1871</td>
+                            <td>Cotton harvest: 6 bales @ 17¢/lb (prices falling)</td>
+                            <td>+$448.80</td>
+                            <td>—</td>
+                            <td>+$101.80</td>
+                        </tr>
+                        <tr>
+                            <td>October 1871</td>
+                            <td>Landlord's share (60% - maximum extraction)</td>
+                            <td>-$269.28</td>
+                            <td>—</td>
+                            <td>-$167.48</td>
+                        </tr>
+                        <tr>
+                            <td>October 1871</td>
+                            <td>Interest on debt (60% due to persistent debt)</td>
+                            <td>—</td>
+                            <td>$129.00</td>
+                            <td>-$296.48</td>
+                        </tr>
+                        <tr>
+                            <td>Nov-Dec 1871</td>
+                            <td>Minimal winter supplies (reducing credit use)</td>
+                            <td>$45.00</td>
+                            <td>—</td>
+                            <td>-$341.48</td>
+                        </tr>
+                        <tr>
+                            <td>End of Year</td>
+                            <td><strong>Final Settlement</strong></td>
+                            <td>—</td>
+                            <td>—</td>
+                            <td><strong>-$341.48</strong></td>
                         </tr>
                     </tbody>
                 </table>
+                <p style="font-size: 0.9em; font-style: italic;">Note: Falling cotton prices combined with accumulated debt made escape impossible. The tenant is now trapped in permanent dependency.</p>
+            </div>
+
+            <div style="background: #f0f0f0; padding: 15px; margin-top: 30px; border-left: 4px solid #333;">
+                <p style="margin: 0; font-size: 0.95em;">
+                    <strong>Pattern Analysis:</strong> These ledgers demonstrate the structural trap. Year 1 showed minimal profit despite full labor. Year 2's single setback (illness, weather) created debt that compounded. By Year 3, falling prices and accumulated interest made the debt mathematically impossible to escape—the tenant would need to work without eating to break even.
+                </p>
             </div>
         </div>
 
@@ -144,17 +304,17 @@
             
             <div class="analysis-block">
                 <h4>Why Debt Increased Despite Labor</h4>
-                <p>[YOUR ANSWER HERE - 1 paragraph]</p>
+                <p>Debt accumulated because the system transferred all economic risk to tenants while landlords controlled every variable that determined profit. When cotton prices dropped, tenants absorbed the entire loss but still owed fixed amounts for supplies purchased at inflated rates. Landlords set the value of crops at settlement time without requiring written contracts or allowing tenants to see the books. This meant a good harvest could be valued low, and charges could be added arbitrarily. Even productive labor couldn't overcome a system where one party controlled pricing, recordkeeping, and had legal authority to define the terms of settlement. The North Carolina Landlord Tenant Acts of 1868 and 1877 codified this imbalance by explicitly allowing landowners to set crop values and not requiring access to financial records.</p>
             </div>
 
             <div class="analysis-block">
                 <h4>Structural Mechanisms That Prevented Escape</h4>
-                <p>[YOUR ANSWER HERE - 1 paragraph]</p>
+                <p>Three interlocking mechanisms made escape structurally impossible. First, landlessness meant tenants had no collateral for loans from anyone except the landlord who held their crop as lien. Second, credit monopolies forced purchase of all supplies from plantation stores at prices 25-70% higher than cash rates, with interest on top. The landlord was often both the creditor and the buyer of the crop, creating an inescapable conflict of interest. Third, debt carried forward across years, compounding at high interest rates. Once behind, tenants could never catch up because each year's settlement paid last year's debt before this year's labor was compensated. A single bad harvest, illness, or price drop created a hole that grew deeper annually regardless of how hard families worked.</p>
             </div>
 
             <div class="analysis-block">
                 <h4>Why There Were No Alternatives</h4>
-                <p>[YOUR ANSWER HERE - 1 paragraph]</p>
+                <p>Poor white Southerners had no better options because the war destroyed alternative economic pathways. Land ownership required capital that didn't exist—even cheap land was unaffordable when you're starting with nothing. Moving to cities was expensive and risky without guaranteed employment. Wage labor paid even less than sharecropping's theoretical share of the crop. The crop-lien system followed tenants across county lines, so changing landlords just meant starting over with the same structural problems. When federal Reconstruction ended in 1877, legal protections evaporated. There was no enforcement of fair dealing, no access to courts that would rule against landowners, and no political power to change the laws that codified the system. The "choice" was sharecropping under exploitative terms or leaving the South entirely with no money to do so.</p>
             </div>
         </div>
 
@@ -162,11 +322,7 @@
         <div id="legacy" class="tab-content">
             <h3>Legacy</h3>
             <p>
-                [SYSTEMS CONNECTION HERE]
-                
-                How economic desperation → political manipulation → racial scapegoating → elite control
-                
-                3-5 sentences.
+                The sharecropping system's death left a specific political legacy: it created the conditions for elite manipulation of poor white voters. Economic desperation made families vulnerable to scapegoating narratives that blamed freed African Americans for the South's poverty rather than the landlord class that controlled both groups. When you're trapped in debt and humiliation despite working dawn to dusk, you need an explanation for why the promised Reconstruction never delivered. Elites offered one: it wasn't the system, it was racial competition for resources. This channeled legitimate economic grievance into support for Jim Crow laws, disenfranchisement, and white supremacy—policies that actually strengthened the same planter class that kept poor whites poor. The system survived its own death by convincing its victims to fight each other rather than the structure itself.
             </p>
         </div>
 
@@ -174,17 +330,54 @@
         <div id="conclusion" class="tab-content">
             <h3>Final Words</h3>
             <p>
-                [YOUR CONCLUSION HERE]
-                
-                What does this reveal about why Reconstruction failed beyond laws and amendments?
-                
-                4-5 sentences max.
+                The sharecropping system reveals that Reconstruction failed not because laws were too radical, but because economic power remained unchanged. The Thirteenth, Fourteenth, and Fifteenth Amendments granted legal rights, but landlessness and debt peonage created a system where rights couldn't be exercised. Poor white Southerners and freed African Americans both needed land redistribution to achieve actual economic independence, but the federal government returned confiscated property to former Confederates instead. When troops withdrew in 1877, legal equality collapsed because it had no economic foundation. The system's legacy demonstrates that political freedom without economic security is vulnerable to recapture—a lesson that extends well beyond Reconstruction.
+            </p>
+        </div>
+
+        <!-- SOURCES TAB -->
+        <div id="sources" class="tab-content">
+            <h3>Sources</h3>
+            
+            <h4>Primary Sources</h4>
+            <p style="margin-left: 20px;">
+                LeFlore (Family). <em>LeFlore family ledger recording the work and debts of sharecroppers on a cotton plantation in Carroll County, Mississippi</em>, 1867-1879. Newberry Library. Internet Archive, <a href="https://archive.org/details/ruggles_561" target="_blank">https://archive.org/details/ruggles_561</a>.
+            </p>
+            <p style="margin-left: 20px;">
+                <em>Sharecropper Account Book [manuscript]</em>, 1866-1868. American Antiquarian Society. Cited in "New to AAS: Sharecropper Account Book, 1866-1868," <em>Past is Present</em>, 24 April 2025, <a href="https://pastispresent.org/2025/good-sources/new-to-aas-sharecropper-account-book-1866-1868/" target="_blank">https://pastispresent.org/2025/good-sources/new-to-aas-sharecropper-account-book-1866-1868/</a>.
+            </p>
+            <p style="margin-left: 20px;">
+                Bailey, Isham G. "Contract between Isham G. Bailey and freedmen Cooper Hughs and Charles Roberts," Mississippi, 1 January 1867. Gilder Lehrman Institute of American History, GLC04522.11, <a href="https://www.gilderlehrman.org/history-resources/spotlight-primary-source/sharecropper-contract-1867" target="_blank">https://www.gilderlehrman.org/history-resources/spotlight-primary-source/sharecropper-contract-1867</a>.
+            </p>
+
+            <h4>Historical Data</h4>
+            <p style="margin-left: 20px;">
+                Forwood, William B. "The Influence of Price upon the Cultivation and Consumption of Cotton During the Ten Years 1860-70," <em>Journal of the Statistical Society of London</em>, Vol. 33, No. 3 (September 1870), pp. 366-383. <a href="https://www.jstor.org/stable/2338904" target="_blank">JSTOR</a>.
+            </p>
+            <p style="margin-left: 20px;">
+                "Cotton Production and Prices, 1860-1876," in <em>The Growth of the Cotton Industry in America</em>. Retrieved from <a href="https://www.sailsinc.org/durfee/earl2.pdf" target="_blank">https://www.sailsinc.org/durfee/earl2.pdf</a>.
+            </p>
+
+            <h4>Secondary Sources</h4>
+            <p style="margin-left: 20px;">
+                "Crop Liens." <em>Mississippi Encyclopedia</em>, Mississippi Humanities Council, 13 April 2018, <a href="https://mississippiencyclopedia.org/entries/crop-liens/" target="_blank">https://mississippiencyclopedia.org/entries/crop-liens/</a>.
+            </p>
+            <p style="margin-left: 20px;">
+                "Sharecropping, Black Land Acquisition, and White Supremacy (1868-1900)." <em>World Food Policy Center</em>, Duke University, 17 November 2025, <a href="https://wfpc.sanford.duke.edu/north-carolina/durham-food-history/sharecropping-black-land-acquisition-and-white-supremacy-1868-1900/" target="_blank">https://wfpc.sanford.duke.edu/north-carolina/durham-food-history/sharecropping-black-land-acquisition-and-white-supremacy-1868-1900/</a>.
+            </p>
+            <p style="margin-left: 20px;">
+                "Sharecroppers." <em>American Battlefield Trust</em>, <a href="https://www.battlefields.org/learn/articles/sharecroppers" target="_blank">https://www.battlefields.org/learn/articles/sharecroppers</a>.
+            </p>
+            <p style="margin-left: 20px;">
+                "Sharecropping." <em>HISTORY</em>, A&E Television Networks, 28 May 2025, <a href="https://www.history.com/topics/black-history/sharecropping" target="_blank">https://www.history.com/topics/black-history/sharecropping</a>.
+            </p>
+            <p style="margin-left: 20px;">
+                Dattel, Eugene R. "Cotton and the Civil War." <em>Mississippi History Now</em>, Mississippi Historical Society, July 2008, <a href="https://www.mshistorynow.mdah.ms.gov/issue/cotton-and-the-civil-war" target="_blank">https://www.mshistorynow.mdah.ms.gov/issue/cotton-and-the-civil-war</a>.
             </p>
         </div>
 
         <!-- FOOTER -->
         <footer>
-            <p>A Historical Analysis | [Your Name] | February 2026</p>
+            <p>A Historical Analysis | Raph | February 2026</p>
         </footer>
 
     </div>
