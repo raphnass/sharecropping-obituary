@@ -1,161 +1,180 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>In Memoriam: The Sharecropping System</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div class="container">
-        
-        <!-- HEADER -->
-        <header class="obituary-header">
-            <h1>In Memoriam</h1>
-            <h2>The Sharecropping System</h2>
-            <p class="dates">1865 – 1877</p>
-            <p class="tagline">"A System Designed to Fail Those It Claimed to Support"</p>
-        </header>
+/* GENERAL RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-        <!-- CAUSE OF DEATH -->
-        <section class="cause-of-death">
-            <h3>Cause of Death</h3>
-            <p>
-                [PUT YOUR SYSTEMIC BREAKDOWN HERE]
-                
-                Explain:
-                - Landlessness as permanent condition
-                - Landlord monopoly on credit
-                - Risk entirely on tenant
-                - Federal abandonment
-                
-                Keep it clinical and factual. 4-6 sentences.
-            </p>
-        </section>
+body {
+    font-family: 'Georgia', 'Times New Roman', serif;
+    background-color: #f5f5f5;
+    color: #222;
+    line-height: 1.7;
+    padding: 20px;
+}
 
-        <!-- FINANCIAL RECORDS -->
-        <section class="financial-records">
-            <h3>Financial Records of the Deceased System</h3>
-            
-            <!-- LEDGER 1 -->
-            <div class="ledger-block">
-                <h4>1867: Initial Promises</h4>
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Date</th>
-                            <th>Item</th>
-                            <th>Credit Taken</th>
-                            <th>Deductions/Interest</th>
-                            <th>Balance</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>March 1867</td>
-                            <td>Seed, tools</td>
-                            <td>$45.00</td>
-                            <td>—</td>
-                            <td>-$45.00</td>
-                        </tr>
-                        <tr>
-                            <td>May 1867</td>
-                            <td>Food supplies</td>
-                            <td>$30.00</td>
-                            <td>—</td>
-                            <td>-$75.00</td>
-                        </tr>
-                        <tr>
-                            <td>October 1867</td>
-                            <td>Cotton harvest</td>
-                            <td>—</td>
-                            <td>$50.00 (interest)</td>
-                            <td>-$125.00</td>
-                        </tr>
-                        <!-- ADD MORE ROWS AS NEEDED -->
-                    </tbody>
-                </table>
-            </div>
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    background: white;
+    border: 8px solid black;
+    padding: 40px 60px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+}
 
-            <!-- LEDGER 2 -->
-            <div class="ledger-block">
-                <h4>1869: Deepening Trap</h4>
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Date</th>
-                            <th>Item</th>
-                            <th>Credit Taken</th>
-                            <th>Deductions/Interest</th>
-                            <th>Balance</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>March 1869</td>
-                            <td>Seed, tools</td>
-                            <td>$50.00</td>
-                            <td>—</td>
-                            <td>-$175.00</td>
-                        </tr>
-                        <!-- ADD MORE ROWS -->
-                    </tbody>
-                </table>
-            </div>
+/* HEADER */
+.obituary-header {
+    text-align: center;
+    border-bottom: 3px solid black;
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+}
 
-            <!-- ADD LEDGER 3 IF YOU WANT -->
+.obituary-header h1 {
+    font-size: 2.5em;
+    font-weight: normal;
+    letter-spacing: 2px;
+    margin-bottom: 5px;
+}
 
-        </section>
+.obituary-header h2 {
+    font-size: 1.8em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
 
-        <!-- IMPACT ON SURVIVORS -->
-        <section class="impact">
-            <h3>Impact on Survivors</h3>
-            
-            <div class="analysis-block">
-                <h4>Why Debt Increased Despite Labor</h4>
-                <p>[YOUR ANSWER HERE - 1 paragraph]</p>
-            </div>
+.obituary-header .dates {
+    font-size: 1.2em;
+    font-style: italic;
+    margin-bottom: 10px;
+}
 
-            <div class="analysis-block">
-                <h4>Structural Mechanisms That Prevented Escape</h4>
-                <p>[YOUR ANSWER HERE - 1 paragraph]</p>
-            </div>
+.obituary-header .tagline {
+    font-size: 1em;
+    font-style: italic;
+    color: #555;
+}
 
-            <div class="analysis-block">
-                <h4>Why There Were No Alternatives</h4>
-                <p>[YOUR ANSWER HERE - 1 paragraph]</p>
-            </div>
-        </section>
+/* TAB NAVIGATION */
+.tab-nav {
+    display: flex;
+    border-bottom: 3px solid black;
+    margin-bottom: 30px;
+}
 
-        <!-- LEGACY -->
-        <section class="legacy">
-            <h3>Legacy</h3>
-            <p>
-                [SYSTEMS CONNECTION HERE]
-                
-                How economic desperation → political manipulation → racial scapegoating → elite control
-                
-                3-5 sentences.
-            </p>
-        </section>
+.tab-button {
+    flex: 1;
+    background-color: #f5f5f5;
+    border: none;
+    border-right: 1px solid #ccc;
+    padding: 15px 10px;
+    font-family: 'Georgia', serif;
+    font-size: 0.95em;
+    cursor: pointer;
+    transition: all 0.3s;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
 
-        <!-- FINAL WORDS -->
-        <section class="final-words">
-            <h3>Final Words</h3>
-            <p>
-                [YOUR CONCLUSION HERE]
-                
-                What does this reveal about why Reconstruction failed beyond laws and amendments?
-                
-                4-5 sentences max.
-            </p>
-        </section>
+.tab-button:last-child {
+    border-right: none;
+}
 
-        <!-- FOOTER -->
-        <footer>
-            <p>A Historical Analysis | [Your Name] | [Date]</p>
-        </footer>
+.tab-button:hover {
+    background-color: #e0e0e0;
+}
 
-    </div>
-</body>
-</html>
+.tab-button.active {
+    background-color: black;
+    color: white;
+    font-weight: bold;
+}
+
+/* TAB CONTENT */
+.tab-content {
+    display: none;
+    animation: fadeIn 0.4s;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* SECTIONS */
+.tab-content h3 {
+    font-size: 1.6em;
+    border-bottom: 2px solid #333;
+    padding-bottom: 8px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.tab-content h4 {
+    font-size: 1.2em;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-style: italic;
+}
+
+.tab-content p {
+    font-size: 1.05em;
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+/* TABLES (LEDGERS) */
+.ledger-block {
+    margin-bottom: 30px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+table thead {
+    background-color: #222;
+    color: white;
+}
+
+table th {
+    padding: 12px;
+    text-align: left;
+    font-weight: bold;
+    font-size: 0.95em;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+table td {
+    padding: 10px 12px;
+    border-bottom: 1px solid #ddd;
+    font-size: 0.95em;
+}
+
+table tbody tr:hover {
+    background-color: #f9f9f9;
+}
+
+/* ANALYSIS BLOCKS */
+.analysis-block {
+    margin-bottom: 25px;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    margin-top: 50px;
+    padding-top: 20px;
+    border-top: 2px solid black;
+    font-size: 0.9em;
+    color: #555;
+}
